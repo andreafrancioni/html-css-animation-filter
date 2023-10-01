@@ -1,0 +1,179 @@
+/* Esercizio 1, quadrato diventa rosso all'hover */
+.ex-1-square{
+    transition: 2s;
+}
+
+.ex-1-square:hover {
+    background-color: red;
+}
+
+
+/* Esercizio 2, quadrato si allunga al click */
+.ex-2-square{
+    transition: 3s;
+}
+
+.ex-2-square:active{
+    width: 100%;
+}
+
+/* Esercizio 3, quadrato diventa rotondo hover */
+.ex-3-square{
+    transition: 2s;
+}
+
+.ex-3-square:hover{
+    border-radius: 50%;
+}
+
+/* Esercizio 4, quadrato scompare */
+.ex-4-square{
+    transition: 2s;
+}
+
+.ex-4-square:hover{
+    opacity: 0;
+}
+
+/* Esercizio 5, quadrato scala con hover e si rimpicciolisce on click */
+.ex-5-square{
+    transition: 2s;
+}
+
+.ex-5-square:hover{
+    scale: 200%;
+}
+
+.ex-5-square{
+    transition: 2s;
+}
+
+.ex-5-square:active{
+    scale: 50%;
+}
+
+/* Esercizio 6, immagine bianco e nero on hover */
+.ex-6-img{
+    
+}
+
+.ex-6-img:hover{
+    filter: grayscale(100);
+}
+
+/* Esercizio 7, non cé immagine*/
+
+
+/* Esercizio 8, immagine con due effetti e bordi arrotondati*/
+
+.ex-8-img{
+    transition: 2s;
+}
+
+.ex-8-img:hover{
+    border-radius: 20%;
+    filter: grayscale(70) opacity(0);
+}
+
+/* Esercizio 9, immagine con due effetti, bordi arrotondati, scala immagine*/
+
+.ex-9-img{
+    transition: 2s;
+}
+
+.ex-9-img:hover{
+    border-radius: 20%;
+    filter: grayscale(70) sepia(100);
+   scale: 150%;
+}
+
+/* Esercizio 10, animazione cerchio che gira*/
+
+.ex-10-icon{
+    animation: gira 2s linear infinite;
+}
+@keyframes gira {
+    0% {
+        transform: rotate(1turn);
+    }
+}
+
+/* Esercizio 11, animazione cerchio che gira on hover in senso orario, ed a 3/4 torna indietro veloce*/
+
+.ex-11-icon:hover{
+    animation: giraOrario 2s linear;
+}
+@keyframes giraOrario {
+    0% {
+        transform: rotate(0);
+    }
+    90%{
+        transform: rotate(280deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
+
+/* Esercizio 12, animazione bottone, spazio bianco si sposta*/
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: muoviLineaTop 2s linear;
+}
+@keyframes muoviLineaTop {
+    0% {
+        left: 10%;
+    }
+    50% {
+        left: calc(100% - 60px);
+    }
+    100% {
+        left: 10%;
+    }
+}
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: muoviLineaBot 2s linear;
+}
+@keyframes muoviLineaBot {
+    0% {
+        right: 10%;
+    }
+    50% {
+        right: calc(100% - 60px);
+    }
+    100% {
+        right: 10%;
+    }
+}
+
+/* Esercizio 13, animazione bottone, bianco gira completamente*/
+
+.ex-13-button:hover .ex-13-top-white {
+    animation: muoviLineaTop 2s linear;
+}
+@keyframes muoviLineaTop {
+    0% {
+        left: 10%;
+    }
+    50% {
+        left: calc(100% - 60px);
+    }
+    100% {
+        left: 10%;
+    }
+}
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: muoviLineaBot 2s linear;
+}
+@keyframes muoviLineaBot {
+    0% {
+        right: 10%;
+    }
+    50% {
+        right: calc(100% - 60px);
+    }
+    100% {
+        right: 10%;
+    }
+}
+
