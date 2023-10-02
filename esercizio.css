@@ -62,7 +62,14 @@
 }
 
 /* Esercizio 7, non cé immagine*/
+.ex-7-img{
+    transition: 2s;
+}
 
+.ex-7-img:hover{
+    filter: grayscale(100);
+    filter: sepia(50);
+}
 
 /* Esercizio 8, immagine con due effetti e bordi arrotondati*/
 
